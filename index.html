@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Lexend", sans-serif;
+        }
+
+        .active {
+            background-color: #B4F461;
+        }
+
+        .active :hover {
+            background-color: #B4F880;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sticky top-0 z-10 pb-5">
+        <header class="bg-[#F9F7F3] py-2">
+            <nav class="w-11/12 mx-auto py-2 flex justify-between items-center">
+                <div>
+                    <a href="./blog.html">
+                        <button
+                        id="blog-btn"
+                        class="btn bg-[#B4F461] hover:bg-[#B4F880]"
+                        >
+                            Blog
+                        </button>
+                    </a>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img width="30" src="./assets/logo.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold hidden md:block">Donate Bangladesh</h2>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/coin.png" alt="" srcset="">
+                    <h2 class="font-semibold"><span id="balance">5500</span>BDT</h2>
+
+                </div>
+            </nav>
+        </header>
+        <nav class="flex justify-center gap-10 pt-8 sticky">
+           <button id="show-donation-btn" class="btn active px-8">Donation</button>
+           <button id="show-history-btn" class="btn px-8">History</button>
+        </nav>
+    </div>
+    <main>
+        <section id="donation-container" class="w-11/12 mx-auto space-y-10 py-10">
+
+        </section>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>
