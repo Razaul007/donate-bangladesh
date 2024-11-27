@@ -1,11 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Donate Bangladesh</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: "Lexend", sans-serif;
+        }
+
+        .active {
+            background-color: #B4F461;
+        }
+
+        .active :hover {
+            background-color: #B4F880;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Blog</h1>
+    <div class="sticky top-0 z-10 pb-5">
+        <header class="bg-[#F9F7F3] py-2">
+            <nav class="w-11/12 mx-auto py-2 flex justify-between items-center">
+                <div>
+                    <a href="./index.html">
+                        <button id="blog-btn" class="btn bg-[#B4F461] hover:bg-[#B4F880]">
+                            Home
+                        </button>
+                    </a>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img width="30" src="./assets/logo.png" alt="" srcset="">
+                    <h2 class="text-xl font-bold hidden md:block">Donate Bangladesh</h2>
+                </div>
+                <div class="flex gap-2 items-center">
+                    <img src="./assets/coin.png" alt="" srcset="">
+                    <h2 class="font-semibold"><span id="balance">5500</span>BDT</h2>
+
+                </div>
+            </nav>
+        </header>
+
+    </div>
+    <main>
+        <div class="space-y-5 w-10/12 mx-auto">
+            <div>
+                <div class="flex justify-start pt-8 sticky">
+                    <h1 class="text-3xl font-bold px-8">Important FAQ</h1>
+                </div>
+            </div>
+            <div class=" space-y-2">
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" checked="checked" />
+                    <div class="collapse-title text-xl font-medium">What is the Document Object Model(DOM)?</div>
+                    <div class="collapse-content">
+                        <p>
+                            The Document Object Model (DOM) is a programming interface for web documents. It represents the structure of a webpage as a tree of objects, allowing developers to manipulate the HTML and CSS of a page using JavaScript.</p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                    <div class="collapse-content">
+                    <p>
+                        <ol>
+                           1. document.getElementById("id") - Selects an element by its ID.
+                        </ol>
+                        <ol>
+                          2.  document.querySelector("selector") - Selects the first element matching the CSS selector.
+                        </ol>
+                        <ol>
+                          3.  document.querySelectorAll("selector") - Selects all elements matching the CSS selector.
+                        </ol>
+                        <ol>
+                          4.  document.getElementsByClassName("className") - Selects elements by class name.
+                        </ol>
+                        <ol>
+                          5.  document.getElementsByTagName("tagName") - Selects elements by tag name.
+                        </ol>
+                    </p>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why is it useful?</div>
+                    <div class="collapse-content">
+                        <p>Event delegation is a technique where you add a single event listener to a parent element instead of multiple listeners to its child elements.</p>
+                          <p> How it works: Events "bubble up" from a child element to its parent, so you can capture events from child elements using the parent.</p>
+                            Why it's useful:
+                            
+                           <ol>
+                            1. Improves performance by reducing the number of event listeners.
+                           </ol>
+                           <ol>
+                            2. Dynamically handles elements added later to the DOM.
+                           </ol>
+                    </div>
+                </div>
+                <div class="collapse collapse-arrow bg-base-200">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How do you manipulate an elements attributes and styles using the DOM?</div>
+                    <div class="collapse-content">
+                        <div>
+                            <p>You can manipulate an element's attributes and styles using JavaScript DOM methods:</p>
+                            <h1 class="text-2xl font-semibold">Attributes:</h1>
+                             <ol>
+                                1. element.setAttribute("attributeName", "value") - Sets or updates an attribute.
+                             </ol>
+                             <ol>
+                                2. element.getAttribute("attributeName") - Gets the value of an attribute.
+                             </ol>
+                             <ol>
+                                3. element.removeAttribute("attributeName") - Removes an attribute.
+                             </ol>
+                             <h1 class="text-2xl font-semibold">Styles:</h1>
+                             <ol>
+                                1. element.style.property = "value" - Sets a specific style (e.g., element.style.color = "red").
+                             </ol>
+                             <ol>
+                                2. element.classList.add("className") - Adds a CSS class.
+                             </ol>
+                             <ol>
+                                3. element.classList.remove("className") - Removes a CSS class.
+                             </ol>
+                             <ol>
+                                4. element.classList.toggle("className") - Toggles a CSS class on or off.
+                             </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
+
 </html>
