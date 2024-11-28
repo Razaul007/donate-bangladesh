@@ -18,8 +18,7 @@ const addToDonationHistory = (amountBalance, cardTitle) =>{
    const historyEntry = document.createElement("div");
    historyEntry.classList.add("border", "p-4", "rounded-lg", "shadow-sm");
    historyEntry.innerHTML =`
-     <h3 class="font-semibold">Title: ${cardTitle}</h3>
-     <p>Donation Amount: ${amountBalance}</p>
+     <h3 class="font-semibold">${amountBalance} Taka is Donated for ${cardTitle}</h3>
      <p>${new Date().toLocaleString()}</p>
      `
    historyContainer.appendChild(historyEntry);
