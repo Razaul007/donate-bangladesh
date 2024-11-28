@@ -35,6 +35,7 @@ const handleDonate = (button)=>{
    
    if(isNaN(amountBalance)|| amountBalance<=0||navbarBalance<amountBalance){
     alert("Please input valid amount!")
+    return;
    }
   updateNavbarBalance(amountBalance);
 
@@ -56,4 +57,18 @@ donateBtns.forEach((btn)=>{
     // console.log(e.target);
     handleDonate(e.target);
    })
+});
+
+
+document.getElementById("show-history-btn").addEventListener("click", ()=>{
+    document.getElementById("show-donation-btn").classList.remove("active");
+    document.getElementById("show-history-btn").classList.add("active");
+    document.getElementById("donation-container").classList.add("hidden");
+    document.getElementById("history-container").classList.remove("hidden");
+})
+document.getElementById("show-donation-btn").addEventListener("click", ()=>{
+    document.getElementById("show-history-btn").classList.remove("active");
+    document.getElementById("show-donation-btn").classList.add("active");
+    document.getElementById("history-container").classList.add("hidden");
+    document.getElementById("donation-container").classList.remove("hidden");
 })
